@@ -487,11 +487,54 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.16 }
-						}
+		bypass = {
+			NOT = {
+				controls_state = 546
+			}
+		}
+		completion_reward = {
+			546 = {
+				if = {
+					limit = { is_controlled_by = GER }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 2196
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10988
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 8183
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 5224
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 2206
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11017
+						instant_build = yes
+					}
 				}
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -546,9 +589,8 @@ focus_tree = {
 			date > 1913.1.1
 		}
 		completion_reward = {
-			GER = {
-				country_event = { id = ww1_germany.47 }
-			}
+			add_manpower = 250000
+			add_political_power = 150
 		}
 		bypass = { OR = {
 			has_global_flag = welcome_event_INT
@@ -945,11 +987,37 @@ focus_tree = {
 			ai_will_do = {
 					factor = 4
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.17 }
-						}
+		available = {
+			controls_state = 541
+		}
+		completion_reward = {
+			541 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4879
+					instant_build = yes
 				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7605
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5189
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5154
+					instant_build = yes
+				}
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -968,11 +1036,65 @@ focus_tree = {
 			ai_will_do = {
 					factor = 4
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.18 }
-						}
+		available = {
+			OR = {
+				controls_state = 539
+				controls_state = 1084
+				controls_state = 538
+				controls_state = 718
+				controls_state = 539
+				controls_state = 539
+			}
+		}
+		completion_reward = {
+			1035 = {
+				if = {
+					limit = { is_controlled_by = GER }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10831
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 7978
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 4889
+						instant_build = yes
+					}
 				}
+			}
+			539 = {
+				if = {
+					limit = { is_controlled_by = GER }
+					add_building_construction = { type = bunker level = 1 province = 10948 instant_build = yes }
+				}
+			}
+			1084 = {
+				if = {
+					limit = { is_controlled_by = GER }
+					add_building_construction = { type = bunker level = 1 province = 10948 instant_build = yes }
+				}
+			}
+			538 = {
+				if = {
+					limit = { is_controlled_by = GER }
+					add_building_construction = { type = bunker level = 1 province = 12824 instant_build = yes }
+				}
+			}
+			718 = {
+				if = {
+					limit = { is_controlled_by = GER }
+					add_building_construction = { type = bunker level = 1 province = 2073 instant_build = yes }
+				}
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
