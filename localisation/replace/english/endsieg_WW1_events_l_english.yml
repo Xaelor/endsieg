@@ -531,9 +531,6 @@
 #
 
 # WW1 Germany #
-    ww1_germany.1.t:0 "Ottoman-German Alliance"
-    ww1_germany.1.d:0 "Today an alliance between our great empire and that of the Ottoman Turks has been officially ratified. The alliance is part of a joint-cooperate effort which will strengthen and help modernize the Turkish military whilst provoding German troops safe passage into neighboing British Colonies."
-    ww1_germany.1.a:0 "Great!"
     ww1_germany.2.t:0 "Germans Supply Dervish State"
     ww1_germany.2.d:0 "In an effort to fight British imperialism through other means than direct war between our two countries we have decided to supply the Dervish State which is currently fighting for freedom in the area of Somalia for almost two decades now."
     ww1_germany.2.a:0 "Hopefully it will help"
@@ -550,13 +547,13 @@
     ww1_germany.6.d:0 "The Emirate of Jabal Shammar hs now officially joined us and our allies in the fight against the Entente, with the entry of the Emirate of Jabal Shammar there shall now be even more resistance against the British in the Middle Eastern campaign. Additionally we have promised should the German Empire and our allies win the Great War we will help the Rashid family in an offensive war against the Saud family (Emirate of Nejd)."
     ww1_germany.6.a:0 "Hurrah!"
     ww1_germany.7.t:0 "Berlin-Baghdad Railway Construction Continues"
-    ww1_germany.7.d:0 "Our effort to connect Berlin with the Ottoman city of Baghdad continues every so slowly, once it is complete we shall gain access to the suspected oilfields of Mesopotamia as well as the port of Basra on the Persian Gulf increasing our power."
+    ww1_germany.7.d:0 "Our effort to connect Berlin with the Ottoman city of Baghdad continues every so slowly, once it is complete Germans can gain access to the suspected oilfields of Mesopotamia as well as the port of Basra on the Persian Gulf increasing their power in exhange for a railway."
     ww1_germany.7.a:0 "Lets hope it gets finished soon!"
     ww1_germany.8.t:0 "Berlin-Baghdad Railway Construction Continues"
-    ww1_germany.8.d:0 "Our effort to connect Berlin with the Ottoman city of Baghdad continues every so slowly, once it is complete we shall gain access to the suspected oilfields of Mesopotamia as well as the port of Basra on the Persian Gulf increasing our power."
+    ww1_germany.8.d:0 "Our effort to connect Berlin with the Ottoman city of Baghdad continues every so slowly, once it is complete Germans can gain access to the suspected oilfields of Mesopotamia as well as the port of Basra on the Persian Gulf increasing their power in exhange for a railway."
     ww1_germany.8.a:0 "Lets hope it gets finished soon!"
     ww1_germany.9.t:0 "Berlin-Baghdad Railway Construction Continues"
-    ww1_germany.9.d:0 "Our effort to connect Berlin with the Ottoman city of Baghdad continues every so slowly, once it is complete we shall gain access to the suspected oilfields of Mesopotamia as well as the port of Basra on the Persian Gulf increasing our power."
+    ww1_germany.9.d:0 "Our effort to connect Berlin with the Ottoman city of Baghdad continues every so slowly, once it is complete Germans can gain access to the suspected oilfields of Mesopotamia as well as the port of Basra on the Persian Gulf increasing their power in exhange for a railway."
     ww1_germany.9.a:0 "Lets hope it gets finished soon!"
     ww1_germany.10.t:0 "Berlin-Baghdad Railway Complete!"
     ww1_germany.10.d:0 "Now that the Berlin-Baghdad Railway is officially completed we should have not only more influence in the Middle East to threaten the British, but also the suspected oilfields of Mesopotamia giving us an edge over the British who have held their Persian Oil over our heads, additionally comes the Port of Basra which will provide useful in connecting with our colonies in East Africa."

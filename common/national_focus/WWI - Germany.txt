@@ -251,7 +251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GE1_negotiate_afgahnistan
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_generic_befriend_afghanistan
 		cost = 10.00
 		prerequisite = {
 			focus = GE1_befriend_afgahnistan
@@ -306,7 +306,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GE1_negotiate_sweden
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_befriend_sweden
 		cost = 10.00
 		prerequisite = {
 			focus = GE1_alternative_diplomacy
@@ -328,40 +328,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GE1_invite_sweden
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = GE1_negotiate_sweden
-		}
-		x = 8
-		y = 4
-			ai_will_do = {
-					factor = 6
-				}
-			available = {
-					has_global_flag = sweden_yes
-				}
-			completion_reward = {
-					SWE = {
-							country_event = { id = ww1_germany.14 }
-						}
-				}
-				bypass = { OR = {
-					has_global_flag = welcome_event_INT
-				}
-				 }
-
-	}
-	focus = {
 		id = GE1_zimmerman
 		icon = GFX_goal_generic_radar
 		cost = 10.00
 		prerequisite = {
 			focus = GE1_negotiate_sweden
 		}
-		x = 10
-		y = 5
+		x = 9
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -421,7 +395,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GE1_negotiate_sweden
 		}
-		x = 12
+		x = 11
 		y = 4
 			ai_will_do = {
 					factor = 3
@@ -445,7 +419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GE1_mittelafrika_plan
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_GER_realize_mittelafrika
 		cost = 10.00
 		prerequisite = {
 			focus = GE1_diplomatic_effort
@@ -1113,14 +1087,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
-			completion_reward = {
-					TUR = {
-							add_opinion_modifier = {
-									target = GER
-									modifier = otto_turk_alliance
-								}
-						}
-				}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = TUR
+				modifier = otto_turk_alliance
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -1129,7 +1101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GE1_ottoman_german_alliance
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_generic_befriend_turkey
 		cost = 10.00
 		prerequisite = {
 			focus = GE1_befriend_turkey
@@ -1142,11 +1114,17 @@ focus_tree = {
 			available = {
 					date > 1914.1.1
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.1 }
-						}
-				}
+		completion_reward = {
+			set_global_flag = authentic_music
+			add_opinion_modifier = {
+				target = TUR
+				modifier = turkey_friend
+			}
+			reverse_add_opinion_modifier = {
+				target = TUR
+				modifier = turkey_friend
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -1165,11 +1143,14 @@ focus_tree = {
 			ai_will_do = {
 					factor = 5
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.7 }
-						}
-				}
+		completion_reward = {
+			build_railway = {
+				path = { 2097 3795 1600 10106 }
+			}
+			TUR = {
+				country_event = { id = ww1_germany.7 }
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -1188,11 +1169,14 @@ focus_tree = {
 			ai_will_do = {
 					factor = 4
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.8 }
-						}
-				}
+		completion_reward = {
+			build_railway = {
+				path = { 10106 10804 1549 12387 }
+			}
+			TUR = {
+				country_event = { id = ww1_germany.8 }
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -1214,11 +1198,14 @@ focus_tree = {
 			available = {
 				is_in_faction_with = BUL
 			}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.9 }
-						}
-				}
+		completion_reward = {
+			build_railway = {
+				path = { 12387 4512 11759 7620 }
+			}
+			TUR = {
+				country_event = { id = ww1_germany.9 }
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -1241,11 +1228,14 @@ focus_tree = {
 			available = {
 				is_in_faction_with = BUL
 			}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.10 }
-						}
-				}
+		completion_reward = {
+			build_railway = {
+				path = { 7620 9761 9777 }
+			}
+			TUR = {
+				country_event = { id = ww1_germany.10 }
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}
@@ -1264,11 +1254,16 @@ focus_tree = {
 			ai_will_do = {
 					factor = 2
 				}
-			completion_reward = {
-					GER = {
-							country_event = { id = ww1_germany.3 }
-						}
-				}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SHA
+				modifier = shammar_friend
+			}
+			reverse_add_opinion_modifier = {
+				target = SHA
+				modifier = shammar_friend
+			}
+		}
 				bypass = { OR = {
 					has_global_flag = welcome_event_INT
 				}

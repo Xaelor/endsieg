@@ -4,24 +4,6 @@
 
 add_namespace = ww1_germany
 
-# Ottoman-German Alliance
-country_event = {
-	id = ww1_germany.1
-	title = ww1_germany.1.t
-	desc = ww1_germany.1.d
-	picture = GFX_report_event_ottoman_german_alliance
-
-	is_triggered_only = yes
-
-	option = {
-		name = ww1_germany.1.a
-		set_global_flag = authentic_music
-		GER = {
-			add_opinion_modifier = { target = TUR modifier = turkey_friend }
-		}
-	}
-}
-
 # Germans Supply Dervish State
 country_event = {
 	id = ww1_germany.2
@@ -118,9 +100,11 @@ country_event = {
 
 	option = {
 		name = ww1_germany.7.a
-		build_railway = {
-  				path = { 2097 3795 1600 10106 }
-   			}
+		effect_tooltip = {
+			build_railway = {
+				path = { 2097 3795 1600 10106 }
+			}
+		}
 	}
 }
 
@@ -135,9 +119,11 @@ country_event = {
 
 	option = {
 		name = ww1_germany.8.a
-		build_railway = {
-  				path = { 10106 10804 1549 12387 }
-   			}
+		effect_tooltip = {
+			build_railway = {
+				path = { 10106 10804 1549 12387 }
+			}
+		}
 	}
 }
 
@@ -152,9 +138,11 @@ country_event = {
 
 	option = {
 		name = ww1_germany.9.a
-		build_railway = {
-  				path = { 12387 4512 11759 7620  }
-   			}
+		effect_tooltip = {
+			build_railway = {
+				path = { 12387 4512 11759 7620 }
+			}
+		}
 	}
 }
 
@@ -169,9 +157,11 @@ country_event = {
 
 	option = {
 		name = ww1_germany.10.a
-		build_railway = {
-  				path = { 7620 9761 9777 }
-   			}
+		effect_tooltip = {
+			build_railway = {
+				path = { 7620 9761 9777 }
+			}
+		}
 	}
 }
 

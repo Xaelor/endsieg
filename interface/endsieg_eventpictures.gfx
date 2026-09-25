@@ -4720,7 +4720,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_befriend_dervish_state.dds"
 	}
 
-	spriteType = {
+	spriteType = { #unused
 		name = "GFX_report_event_ottoman_german_alliance"
 		texturefile = "gfx/event_pictures/report_event_ottoman_german_alliance.dds"
 	}
